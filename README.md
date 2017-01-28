@@ -12,7 +12,7 @@ Counting unique/total word ratio in a body of text
 
 - Node filesystem module https://nodejs.org/api/fs.html
 - JS string split https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split
-- `/[^\w|’]|\d/` regex pattern cobbled together on http://regexr.com/
+- `/[^\w|’|']|\d/` regex pattern cobbled together on http://regexr.com/
 
 ## running locally
 
