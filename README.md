@@ -25,7 +25,6 @@ Counting unique/total word ratio in a body of text
 ## example output
 
 ```
-aburner at burnerbook in ~/Projects/node/wordcount (master)
 $ node count.js
 readFile: /Users/aburner/Projects/node/wordcount/article.txt
 total word count = 1302
