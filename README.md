@@ -10,13 +10,14 @@ Counting unique/total word ratio in a body of text
 
 ## material
 
-- Node filesystem module https://nodejs.org/api/fs.html
+- Node.js filesystem module https://nodejs.org/api/fs.html
 - JS string split https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split
+- JS map https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map
 - `/[^\w|’|']|\d/` regex pattern cobbled together on http://regexr.com/
 
 ## running locally
 
-1. Install node https://nodejs.org/en/download/
+1. Install Node.js https://nodejs.org/en/download/
 2. Open up your command line
 3. Checkout this repo locally: `git clone https://github.com/alexburner/wordcount.git`
 4. Run the JS file: `node count.js`
