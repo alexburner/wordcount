@@ -20,3 +20,14 @@ Counting unique/total word ratio in a body of text
 2. Open up your command line
 3. Checkout this repo locally: `git clone https://github.com/alexburner/wordcount.git`
 4. Run the JS file: `node count.js`
+
+## example output
+
+```
+aburner at burnerbook in ~/Projects/node/wordcount (master)
+$ node count.js
+readFile: /Users/aburner/Projects/node/wordcount/article.txt
+total word count = 1302
+unique word count = 466
+unique/total ratio = 0.3579109062980031
+```
