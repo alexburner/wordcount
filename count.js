@@ -6,7 +6,7 @@ fs.readFile(file, 'utf8', (err, data) => {
     console.log('readFile:', file);
     if (err) return console.error(err);
     if (!data) return console.error('no data');
-    let words = data.split(/[^\w|’]|\d/);
+    let words = data.split(/[^\w|’|']|\d/);
     let wordMap = new Map();
     words.forEach(word => {
         if (!word || !word.length) return;
