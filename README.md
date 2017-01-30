@@ -13,7 +13,7 @@ Counting unique/total word ratio in a body of text
 - Node.js filesystem module https://nodejs.org/api/fs.html
 - JS string split https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split
 - JS set https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set
-- `/[^\w|’|']|\d/` regex pattern cobbled together on http://regexr.com/
+- `/[^a-z|\u2019|']/i` regex pattern cobbled together on http://regexr.com/
 
 ## running locally
 
@@ -26,7 +26,7 @@ Counting unique/total word ratio in a body of text
 
 ```
 $ node count.js
-readFile: /Users/aburner/Projects/node/wordcount/article.txt
+fs.readFile -> /Users/aburner/Projects/node/wordcount/article.txt
 total word count = 1302
 unique word count = 466
 unique/total ratio = 0.3579109062980031

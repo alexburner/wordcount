@@ -1,12 +1,13 @@
 let fs = require('fs');
+let path = require('path');
 
-let file = __dirname + '/article.txt';
+let file = path.resolve(__dirname, 'article.txt');
 
 fs.readFile(file, 'utf8', (err, data) => {
-    console.log('readFile:', file);
+    console.log('fs.readFile ->', file);
     if (err) return console.error(err);
     if (!data) return console.error('no data');
-    let words = data.split(/[^\w|’|']|\d/);
+    let words = data.split(/[^a-z|\u2019|']/i); // u2019 = fancy apostrophe
     let wordSet = new Set();
     words.forEach(word => {
         if (!word || !word.length) return;
